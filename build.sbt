@@ -3,6 +3,7 @@ name := "crawler"
 version := "0.1"
 
 scalaVersion := "2.12.15"
+resolvers += "jitpack" at "https://jitpack.io"
 
 idePackagePrefix := Some("ru.itis")
 
@@ -12,3 +13,4 @@ libraryDependencies += "com.johnsnowlabs.nlp" %% "spark-nlp" % "3.4.2"
 libraryDependencies += "org.apache.spark" %% "spark-core" % "3.1.2"
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.1.2"
 libraryDependencies += "org.apache.spark" %% "spark-mllib" % "3.1.2"
+libraryDependencies += "com.github.demidko"%% "aot" % "2021.11.17"
